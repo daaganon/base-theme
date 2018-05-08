@@ -1,0 +1,13 @@
+// import bootstrap and theme vars
+
+@import "theme-vars"; // the theme vars may contain overrides to the bootstrap variables
+// @import "custom-bootstrap"; // don't forget to comment out stuff you don't need from bootstrap to make your stylesheets smaller
+
+// load your module files here
+// @import "modules/sprites"; // uncomment include sprites below when using this module. Also make sure you run 'grunt sprite' to build this module
+
+// load your partial files here
+// @import "partials/common";
+// @import "modules/flex-grid";
+
+// @include sprites($spritesheet-sprites);

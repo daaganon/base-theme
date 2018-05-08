@@ -1,0 +1,38 @@
+{
+  "name": "darrell-base",
+  "version": "1.0.0",
+  "description": "Base package to implement Grunt automation and add Bootstrap",
+  "main": "index.js",
+  "scripts": {
+    "test": "grunt qunit"
+  },
+  "repository": {
+    "type": "git",
+    "url": "ssh://git@repos.ballisticarts.net/home/git/repos/wp-themes/base-theme.git"
+  },
+  "keywords": [
+    "grunt"
+  ],
+  "author": "Darrell Aganon",
+  "license": "MIT",
+  "devDependencies": {
+    "browserify": "^16.1.1",
+    "chalk": "^2.1.0",
+    "common-shakeify": "^0.4.6",
+    "deepmerge": "^2.1.0",
+    "grunt": "^1.0.2",
+    "grunt-autoprefixer": "^3.0.4",
+    "grunt-browserify": "^5.2.0",
+    "grunt-contrib-concat": "^1.0.1",
+    "grunt-contrib-jshint": "^1.1.0",
+    "grunt-contrib-uglify": "^3.3.0",
+    "grunt-contrib-watch": "^1.0.0",
+    "grunt-ftp-push": "^1.2.1",
+    "grunt-sass": "^2.1.0",
+    "grunt-spritesmith": "^6.6.0",
+    "bootstrap": "^4.1.1"
+  },
+  "dependencies": {
+    "popper.js": "^1.14.3"
+  }
+}

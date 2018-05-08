@@ -1,0 +1,14 @@
+/**
+ * IMPORTANT NOTE: this file and implementation is still under construction on how it should work.
+ */
+
+/**
+ * Description: 
+ * This is a special file that should be created both as a separate editor.css file and included in the main.css files.
+ * This file should be styled according to how the styles will look in content areas on the site as well as in the editor.
+ * IMPORTANT: no styles should be page specific as this is a common ground stylesheet between wordpress editor and site styles
+ */
+
+#tinymce {
+	@import 'main';
+}

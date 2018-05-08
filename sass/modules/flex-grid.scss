@@ -1,0 +1,85 @@
+@import 'mixins/flex-grid';
+
+.container {
+	@include container-fixed();
+
+	@media (min-width: $screen-sm-min) {
+		width: $container-sm;
+	}
+	@media (min-width: $screen-md-min) {
+		width: $container-md;
+	}
+	@media (min-width: $screen-lg-min) {
+		width: $container-lg;
+	}
+}
+
+.container-fluid {
+	@include container-fixed();
+}
+
+%flex-wrap {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+@mixin flex-wrap {
+	display: flex;
+	flex-wrap: wrap;
+	// align-items: center;
+}
+
+%flex-margins {
+	margin-left: -($grid-gutter-width/2);
+	margin-right: -($grid-gutter-width/2);
+}
+
+.flex-pull-right {
+	margin-left: auto;
+}
+.flex-pull-left {
+	margin-right: auto;
+}
+
+.flex-reverse {
+	flex-direction: row-reverse;
+}
+
+.flex-wrap {
+	@extend %flex-margins;
+}
+.flex-col {
+	// margin: $grid-gutter-width/2;
+	padding-left: $grid-gutter-width/2;
+	padding-right: $grid-gutter-width/2;
+	margin-top: $grid-gutter-width/2;
+	margin-bottom: $grid-gutter-width/2;
+}
+
+@include calc-grid(xs);
+@include calc-cols(xs);
+@include calc-wrap(xs);
+
+// @include calc-cols(sm);
+// @include calc-cols(md);
+// @include calc-cols(lg);
+// 
+
+@media screen and (min-width: $screen-sm-min) {
+	@include calc-grid(sm);
+	@include calc-cols(sm);
+	@include calc-wrap(sm);
+}
+
+@media screen and (min-width: $screen-md-min) {
+	
+	@include calc-grid(md);
+	@include calc-cols(md);
+	@include calc-wrap(md);
+}
+
+@media screen and (min-width: $screen-lg-min) {
+	@include calc-grid(lg);
+	@include calc-cols(lg);
+	@include calc-wrap(lg);
+}

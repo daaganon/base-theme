@@ -1,0 +1,30 @@
+
+@mixin calc-grid($class) {
+	@for $i from 1 through $grid-columns {
+		.flex-columns--#{$class}-#{$i} {
+			> .flex-col {
+				width: percentage(($i/$grid-columns));
+			}
+		}
+	}
+}
+
+@mixin calc-wrap($class) {
+	.flex-wrap--#{$class} {
+		@include flex-wrap;
+	}
+}
+
+@mixin calc-cols($class) {
+	@for $i from 1 through $grid-columns {
+		.flex-col--#{$class}-#{$i} {
+			width: percentage(($i/$grid-columns));
+		}
+	}
+}
+
+@mixin flex-wrap {
+	display: flex;
+	flex-wrap: wrap;
+	// align-items: center;
+}
